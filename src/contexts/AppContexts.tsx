@@ -1,9 +1,9 @@
 import { LoginContextProvider } from "./LoginContext"
 
-export const AppContext = ({ chhildren }: { chhildren: React.ReactNode }) => {
+export const AppContext = ({ children }: { children: React.ReactNode }) => {
     return (
         <LoginContextProvider>
-            {chhildren}
+            {children}
         </LoginContextProvider>
     )
 }
