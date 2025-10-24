@@ -1,9 +1,10 @@
 import { StyleSheet, View } from "react-native"
+import { ITelaProps } from "../interfaces/tela.interface"
 
-export interface ITelaProps {
-    children: React.ReactNode;
-    centralizar?: boolean;
-}
+// export interface ITelaProps {
+//     children: React.ReactNode;
+//     centralizar?: boolean;
+// }
 
 export const Tela = ({ children, centralizar }: ITelaProps) => {
     return (

@@ -2,14 +2,15 @@ import { StyleSheet, Text, TextInput, TextInputProps, View } from "react-native"
 import { Entypo } from "@expo/vector-icons";
 import { BtnIcon } from "../Buttons/BtnIcon";
 import { useState } from "react";
+import { IInputComponentProps } from "@/src/interfaces/input.interface";
 
-export interface IInputComponentProps extends TextInputProps {
-    isPassword: boolean;
-    labelTxt: string;
-    borda?: boolean;
-    corBorda?: string;
-    backgroud?: string;
-}
+// export interface IInputComponentProps extends TextInputProps {
+//     isPassword: boolean;
+//     labelTxt: string;
+//     borda?: boolean;
+//     corBorda?: string;
+//     backgroud?: string;
+// }
 
 export const InputComponent = ({ isPassword, labelTxt, borda = true, corBorda, backgroud, ...rest }: IInputComponentProps) => {
 
@@ -58,7 +59,7 @@ export const InputComponent = ({ isPassword, labelTxt, borda = true, corBorda, b
             <View style={{ height: 'auto', alignItems: 'flex-start', justifyContent: 'center' }}>
                 <Text style={label}>{labelTxt}</Text>
             </View>
-            
+
             <View style={container}>
                 <TextInput
                     style={input}

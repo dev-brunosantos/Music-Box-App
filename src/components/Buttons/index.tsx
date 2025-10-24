@@ -1,12 +1,13 @@
+import { IBtnProps } from "@/src/interfaces/button.interface";
 import { StyleSheet, Text, TouchableOpacity, TouchableOpacityProps } from "react-native";
 
-export interface IBtnProps extends TouchableOpacityProps {
-    titulo: string;
-    borda?: boolean;
-    corBorda?: string;
-    corText?: string;
-    backgroud?: string;
-}
+// export interface IBtnProps extends TouchableOpacityProps {
+//     titulo: string;
+//     borda?: boolean;
+//     corBorda?: string;
+//     corText?: string;
+//     backgroud?: string;
+// }
 
 export const BtnComponent = ({ titulo, ...rest }: IBtnProps) => {
     return (

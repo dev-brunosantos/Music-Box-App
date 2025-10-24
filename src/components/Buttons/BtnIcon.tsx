@@ -1,10 +1,11 @@
+import { IBtnIconProps } from "@/src/interfaces/button.interface"
 import { StyleSheet, TouchableOpacity, TouchableOpacityProps } from "react-native"
 
-export interface BtnIconProps extends TouchableOpacityProps {
-    children: React.ReactNode;
-}
+// export interface BtnIconProps extends TouchableOpacityProps {
+//     children: React.ReactNode;
+// }
 
-export const BtnIcon = ({ children, ...rest }: BtnIconProps) => {
+export const BtnIcon = ({ children, ...rest }: IBtnIconProps) => {
     return (
         <TouchableOpacity style={styles.btn} {...rest}>
             {children}
