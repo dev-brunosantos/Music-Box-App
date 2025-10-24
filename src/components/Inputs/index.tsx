@@ -20,7 +20,7 @@ export const InputComponent = ({ isPassword, labelTxt, borda = true, corBorda, b
     const [icone, setIcone] = useState('eye-with-line')
 
     const verificarSenha = () => {
-        if(seguranca) {
+        if (seguranca) {
             setSeguranca(false)
             setIcone('eye')
         }
@@ -33,7 +33,9 @@ export const InputComponent = ({ isPassword, labelTxt, borda = true, corBorda, b
     if (isPassword) {
         return (
             <View>
-                <Text style={label}>{labelTxt}</Text>
+                <View style={{ height: 'auto', alignItems: 'flex-start', justifyContent: 'center' }}>
+                    <Text style={label}>{labelTxt}</Text>
+                </View>
 
                 <View style={container}>
 
@@ -53,8 +55,10 @@ export const InputComponent = ({ isPassword, labelTxt, borda = true, corBorda, b
 
     return (
         <View>
-            <Text style={label}>{labelTxt}</Text>
-
+            <View style={{ height: 'auto', alignItems: 'flex-start', justifyContent: 'center' }}>
+                <Text style={label}>{labelTxt}</Text>
+            </View>
+            
             <View style={container}>
                 <TextInput
                     style={input}
@@ -103,3 +107,4 @@ const styles = StyleSheet.create({
         right: 16
     }
 })
+
