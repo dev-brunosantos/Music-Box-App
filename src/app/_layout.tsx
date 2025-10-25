@@ -8,6 +8,7 @@ export default function AppLayout() {
                 <Stack.Screen name="index" />
                 <Stack.Screen name="Login" />
                 <Stack.Screen name="CriarConta" options={{ headerTitle: 'Criar Conta' }} />
+                <Stack.Screen name="(drawer)" options={{ headerShown: false }}/>
             </Stack>
         </AppContext>
     )
