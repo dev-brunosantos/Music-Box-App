@@ -16,9 +16,9 @@ export const BtnIcon = ({ children, ...rest }: IBtnIconProps) => {
 const styles = StyleSheet.create({
     btn: {
         height: '100%',
-        padding: 12,
+        padding: 10,
         alignItems: 'center',
         justifyContent: 'center',
-        borderWidth: 1
+        //borderWidth: 1
     }
 })
