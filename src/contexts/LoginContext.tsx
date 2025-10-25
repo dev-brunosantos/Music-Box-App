@@ -16,7 +16,7 @@ const LoginContextProvider = ({ children }: { children: React.ReactNode }) => {
         }
         setUsuario({ email, senha })
 
-        return route.push('/CriarConta')
+        return route.push('/(drawer)')
     }
 
     const logout = () => {
